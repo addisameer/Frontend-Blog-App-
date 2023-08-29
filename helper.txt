@@ -1,0 +1,21 @@
+const sendRequest = async (type = "login") => {
+    try {
+      const res = await axios.post(
+        `http://localhost:5000/api/user/login ${type}`,
+        {
+          name: inputs.name,
+          email: inputs.email,
+          password: inputs.password,
+        }
+      );
+   
+      console.log(res.data);
+  
+      return res.data;
+    } catch (err) {
+      console.log(err);
+      return null; // or handle the error in an appropriate way
+    }
+  };chatgpt
+  replace kiye hai is code ko chatgpt se
+  *************************************************************************************
